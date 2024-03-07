@@ -90,7 +90,7 @@ import ReactHtmlParser from "react-html-parser";
 import ckeditor from "ckeditor4-with-fmath"
 
 import { CKEditor } from 'ckeditor4-react';
-
+import * as edit from  "../math_on_web.com/math-on-web.com/CKEditor-Plugin/ckeditor_4.5.7_standard/ckeditor/ckeditor.js" 
 function App() {
   const [data, setData] = useState("");
   const [addedData, showData] = useState(0);
@@ -246,7 +246,7 @@ function App() {
         <CKEditor
        id="editor"
    // editorUrl={"https://math-on-web.com/CKEditor-Plugin/ckeditor_4.5.7_standard/ckeditor/ckeditor.js"}
-   editorUrl={  "../public/math_on_web.com/math-on-web.com/CKEditor-Plugin/ckeditor_4.5.7_standard/ckeditor/ckeditor.js"  }
+   editorUrl={  edit  }
 //          config={{
 //           toolbar: [
 //             { name: "tools", items: ["Maximize"] },
