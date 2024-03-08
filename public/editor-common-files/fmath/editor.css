@@ -1,0 +1,138 @@
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  float: left !important;
+  padding: 2px 8px !important;
+  text-decoration: none !important;
+}
+
+.ui-widget {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 13px !important;
+}
+#FMathEd1_ads {
+  display: none !important;
+}
+#layout_FMathEd1_mainLayout_panel_main {
+  height: 100% !important;
+}
+#FMathEd1mainContent {
+  height: 100% !important;
+}
+#FMathEd1bottomContent {
+  display: none !important;
+}
+#w2ui-panel-content {
+  display: none !important;
+}
+.ui-tabs .ui-tabs-nav {
+  padding: 0 !important;
+}
+#layout_FMathEd1_mainLayout_panel_preview {
+  display: none !important;
+}
+.ui-tabs .ui-tabs-panel {
+  padding: 1px !important;
+}
+
+.ui-button {
+  padding: 0px !important;
+  vertical-align: top !important;
+}
+
+select {
+  vertical-align: top !important;
+}
+
+.sp-replacer {
+  padding: 1px !important;
+  vertical-align: top !important;
+}
+
+.sp-preview {
+  width: 19px !important;
+  height: 19px !important;
+}
+
+.ui-title {
+  padding: 2px !important;
+  float: left !important;
+  width: 99% !important;
+  margin: 2px !important;
+  font-size: 85% !important;
+}
+
+.ui-accordion .ui-accordion-header {
+  padding: 2px !important;
+  text-align: left !important;
+  width: 99% !important;
+}
+
+.ui-dialog {
+  z-index: 1000 !important;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+  padding: 2px 15px !important;
+}
+
+.CodeMirror {
+  font-size: 13px !important;
+}
+
+.flyingInputText {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  z-index: 1 !important;
+  padding: 0px !important;
+}
+
+input[type="radio"] {
+  margin-top: -1px !important;
+  vertical-align: middle !important;
+}
+
+div[type="normalButton"] {
+  padding: 0.4em 3em !important;
+  vertical-align: middle !important;
+}
+
+.ui-accordion .ui-accordion-content {
+  padding: 0 !important;
+}
+
+input[class="selectFontSize"] {
+  padding: 3px !important;
+}
+
+input {
+  padding: 2px !important;
+}
+
+option {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+div[type="numpadButton"] {
+  padding: 0.3em 0.8em !important;
+  vertical-align: middle !important;
+  background: #4d4dff !important;
+}
+
+div[type="navigationButton"] {
+  padding: 0.3em 0.25em !important;
+  vertical-align: middle !important;
+  background: #4d4dff !important;
+}
+
+div[type="functionsButton1"] {
+  padding: 0.2em 0.25em !important;
+  vertical-align: middle !important;
+  background: #4d4dff !important;
+}
+
+div[type="functionsButton2"] {
+  padding: 0.25em 0.25em !important;
+  vertical-align: middle !important;
+  background: #4d4dff !important;
+}

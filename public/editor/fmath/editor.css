@@ -12,11 +12,11 @@
 #layout_FMathEd1_mainLayout_panel_main {
   height: 100% !important;
 }
-#FMathEd1_mainContent {
-  position: unset !important;
-}
 #FMathEd1mainContent {
   height: 100% !important;
+}
+#FMathEd1_mainContent {
+  position: unset !important;
 }
 .ui-widget {
   font-family: Arial, Helvetica, sans-serif;
