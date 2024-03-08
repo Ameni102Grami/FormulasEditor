@@ -45808,7 +45808,12 @@ var FMATH = (function () {
     function b3() {}
     b3.prototype.buildEditor = function (ou) {};
     b3.prototype.executeEvent = function (ou) {};
-    b3.prototype.setSaveCallback = function (ou) {};
+    b3.prototype.setSaveCallback = function (ou) {
+        this.config.pk(ou);
+        var mN = new iK();
+        mN.pq("UPDATE_INTERFACE");
+        this.executeEvent(mN);
+    };
     b3.prototype.setMathML = function (ou) {};
     b3.prototype.getMathML = function (ou) {
         return null;
@@ -45816,7 +45821,16 @@ var FMATH = (function () {
     b3.prototype.getImage = function (ou, ov) {
         return null;
     };
-    b3.prototype.getBlobOrUrl = function (ou, ov, ow) {};
+    b3.prototype.getBlobOrUrl = function (ou, ov, ow) {
+        var mN = this.getImage(ov, ow);
+       // if (!this.config?.ff()) {
+            ou(mN);
+            return;
+     //   }
+        mN = mN.substring("data:image/png;base64,".length);
+        var mQ = this.config.nh().getMathMLString(ov, true);
+        aG.Nl(ou, this.config.bL(), mN, mQ);
+    };
     b3.prototype.updateInterface = function () {};
     b3.prototype.showEditor = function () {};
 
@@ -49605,7 +49619,7 @@ var FMATH = (function () {
         return ou;
     };
     bH.console = function (ou) {
-        console.log(ou);
+        // console.log(ou);
     };
     bH.getHexColor = function (ou) {
         if (ou == null || ou.length == 0) {
@@ -49796,7 +49810,7 @@ var FMATH = (function () {
         var ou = ow.replace(/-/g, "+").replace(/_/g, "/");
         var ox = JSON.parse(atob(ou));
         this.s = ox.iss;
-        this.w = ox.watermark;
+     //   this.w = ox.watermark;
         this.k = ox.key;
         this.product = ox.product;
         this.expireDate = ox.exp;

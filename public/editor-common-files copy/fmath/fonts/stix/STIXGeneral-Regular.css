@@ -1,0 +1,14 @@
+/* Webfont: STIXGeneral-Regular */
+
+@font-face {
+    font-family: 'STIXGeneralRegular';
+    src: url('STIXGeneral-Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('STIXGeneral-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('STIXGeneral-Regular.woff') format('woff'), /* Modern Browsers */
+    url('STIXGeneral-Regular.ttf') format('truetype');
+    /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}

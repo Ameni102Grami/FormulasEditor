@@ -6,21 +6,12 @@
 
     <script src="jquery-ui-1.12.1/external/jquery/jquery.js"></script>
     <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
-    <link
-      href="jquery-ui-1.12.1/jquery-ui.css"
-      rel="stylesheet"
-    />
+    <link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet" />
 
-    <link
-      href="w2ui-1.4.3/w2ui-1.4.3.css"
-      rel="stylesheet"
-    />
+    <link href="w2ui-1.4.3/w2ui-1.4.3.css" rel="stylesheet" />
     <script src="w2ui-1.4.3/w2ui-1.4.3.min.js"></script>
 
-    <link
-      href="codemirror/lib/codemirror.css"
-      rel="stylesheet"
-    />
+    <link href="codemirror/lib/codemirror.css" rel="stylesheet" />
     <script src="codemirror/lib/codemirror.js"></script>
     <script src="codemirror/mode/xml/xml.js"></script>
     <script src="codemirror/mode/stex/stex.js"></script>
@@ -51,12 +42,12 @@
         imgFontPath: "fmath/imgFonts",
         folderUrlForFonts: "fmath/fonts",
       });
-      //  e1.mathEditor("setSaveCallback", clientSaveMethod);
+      e1.mathEditor("setSaveCallback", clientSaveMethod);
 
-      //   function clientSaveMethod() {
-      //     // get info from editor ex: get image
-      //     alert(e1.mathEditor("getMathML", "ENTITIES", "true"));
-      //   }
+      function clientSaveMethod() {
+        // get info from editor ex: get image
+        alert(e1.mathEditor("getMathML", "ENTITIES", "true"));
+      }
       function getMathML() {
         return e1.mathEditor("getMathML", "ENTITIES", "true");
       }
@@ -74,14 +65,14 @@
 
       window.addEventListener("message", (event) => {
         var data = event.data;
-        // console.log("currentEditorId:" + currentEditorId);
-        // console.log(data);
-        // if (data.indexOf(currentEditorId + ":") == 0) {
-        //   data = data.substring(currentEditorId.length + 1);
-        // } else {
-        //   return;
-        // }
-        // console.log(data);
+        console.log("currentEditorId:" + currentEditorId);
+        console.log(data);
+        if (data.indexOf(currentEditorId + ":") == 0) {
+          data = data.substring(currentEditorId.length + 1);
+        } else {
+          return;
+        }
+        console.log(data);
 
         if (data.indexOf("getDataEditor") == 0) {
           var toEncode = Base64.encode(getMathML());
@@ -102,7 +93,7 @@
         }
       });
 
-      //  window.parent.postMessage(currentEditorId + ":Initialization:", "*");
+      window.parent.postMessage(currentEditorId + ":Initialization:", "*");
 
       var Base64 = {
         // private property
@@ -134,11 +125,7 @@
             }
 
             output =
-              output +
-              this._keyStr.charAt(enc1) +
-              this._keyStr.charAt(enc2) +
-              this._keyStr.charAt(enc3) +
-              this._keyStr.charAt(enc4);
+              output 
           } // Whend
 
           return output;

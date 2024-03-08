@@ -86,7 +86,7 @@
 import { useState } from "react";
 //import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "ckeditor5-mathtype-with-extra-plugins/";
-import ReactHtmlParser from "react-html-parser";
+
 import ckeditor from "ckeditor4-with-fmath"
 
 import { CKEditor } from 'ckeditor4-react';
